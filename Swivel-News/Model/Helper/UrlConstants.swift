@@ -28,5 +28,9 @@ struct APPURL {
         return newsAPI_URL  + "top-headlines?country=us"
     }
     
+    static var allNews: String {
+        return newsAPI_URL  + "everything?q="
+    }
+    
     
 }

@@ -164,6 +164,9 @@
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bitCointBtn:" destination="Cyy-W5-NKh" eventType="touchUpInside" id="zfw-wy-Ccn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0F9-mS-oHe">
                                 <rect key="frame" x="151" y="105" width="112" height="39"/>
@@ -178,6 +181,9 @@
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="appleBtn:" destination="Cyy-W5-NKh" eventType="touchUpInside" id="bCi-2m-QaX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mg7-zz-lmH">
                                 <rect key="frame" x="282" y="105" width="112" height="39"/>
@@ -192,12 +198,92 @@
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="earthquakeBtn:" destination="Cyy-W5-NKh" eventType="touchUpInside" id="7gB-Vf-DNg"/>
+                                </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ckh-Pd-x75">
+                                <rect key="frame" x="10" y="166" width="394" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="allNewsCell" rowHeight="126" id="iza-22-zv7" customClass="AllNewsCell" customModule="Swivel_News" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="394" height="126"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iza-22-zv7" id="l6d-W3-6QF">
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="126"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfX-vV-ASP" customClass="CurvedView" customModule="Swivel_News" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="6" width="0.0" height="115"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N3H-2b-i4W">
+                                                            <rect key="frame" x="8" y="18" width="80" height="79"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GD-ZM-LRZ">
+                                                            <rect key="frame" x="109" y="20" width="280" height="48"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="48" id="GVq-dy-Yat"/>
+                                                                <constraint firstAttribute="width" constant="280" id="qCt-sT-ZXO"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                            <color key="textColor" red="0.18039215689999999" green="0.1137254902" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qP-zS-x55">
+                                                            <rect key="frame" x="109" y="69" width="280" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="N3H-2b-i4W" firstAttribute="centerY" secondItem="yfX-vV-ASP" secondAttribute="centerY" id="1xw-Rb-YzM"/>
+                                                        <constraint firstItem="9GD-ZM-LRZ" firstAttribute="top" secondItem="yfX-vV-ASP" secondAttribute="top" constant="20" id="5ZD-yg-eG9"/>
+                                                        <constraint firstItem="9GD-ZM-LRZ" firstAttribute="leading" secondItem="N3H-2b-i4W" secondAttribute="trailing" constant="21" id="7T0-Qq-JxK"/>
+                                                        <constraint firstAttribute="width" constant="397" id="Avn-N9-uLy"/>
+                                                        <constraint firstAttribute="height" constant="115" id="FuH-TA-WTm"/>
+                                                        <constraint firstItem="9GD-ZM-LRZ" firstAttribute="leading" secondItem="4qP-zS-x55" secondAttribute="leading" id="P17-9V-cgm"/>
+                                                        <constraint firstAttribute="width" secondItem="yfX-vV-ASP" secondAttribute="height" multiplier="397:115" id="Q5q-DD-FEJ"/>
+                                                        <constraint firstItem="9GD-ZM-LRZ" firstAttribute="leading" secondItem="N3H-2b-i4W" secondAttribute="trailing" constant="21" id="ZQq-zo-pOl"/>
+                                                        <constraint firstItem="4qP-zS-x55" firstAttribute="top" secondItem="9GD-ZM-LRZ" secondAttribute="bottom" constant="1" id="bPz-yN-THT"/>
+                                                        <constraint firstItem="9GD-ZM-LRZ" firstAttribute="top" secondItem="N3H-2b-i4W" secondAttribute="top" constant="2" id="dVW-cc-qBm"/>
+                                                        <constraint firstItem="9GD-ZM-LRZ" firstAttribute="trailing" secondItem="4qP-zS-x55" secondAttribute="trailing" id="hTY-pS-Urs"/>
+                                                        <constraint firstItem="9GD-ZM-LRZ" firstAttribute="leading" secondItem="yfX-vV-ASP" secondAttribute="leading" constant="109" id="mZM-4C-H16"/>
+                                                        <constraint firstItem="N3H-2b-i4W" firstAttribute="leading" secondItem="yfX-vV-ASP" secondAttribute="leading" constant="8" id="w7k-Xh-yxk"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="yfX-vV-ASP" secondAttribute="bottom" constant="5" id="9Ef-oi-tst"/>
+                                                <constraint firstAttribute="trailing" secondItem="yfX-vV-ASP" secondAttribute="trailing" id="9gS-Wu-mND"/>
+                                                <constraint firstItem="yfX-vV-ASP" firstAttribute="top" secondItem="l6d-W3-6QF" secondAttribute="top" constant="6" id="Iao-8c-bfJ"/>
+                                                <constraint firstItem="yfX-vV-ASP" firstAttribute="leading" secondItem="l6d-W3-6QF" secondAttribute="leading" id="tE1-nm-kTt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="autherName" destination="4qP-zS-x55" id="CXr-yK-NYc"/>
+                                            <outlet property="background" destination="yfX-vV-ASP" id="S2O-6d-ku5"/>
+                                            <outlet property="newsTitle" destination="9GD-ZM-LRZ" id="06K-d9-kS2"/>
+                                            <outlet property="titleImage" destination="N3H-2b-i4W" id="ZCh-Jt-jP3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Cyy-W5-NKh" id="kyG-MO-c4s"/>
+                                    <outlet property="delegate" destination="Cyy-W5-NKh" id="N0g-73-8vH"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="mwh-Qd-24h"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Preferred" id="4BL-Qo-LFB"/>
+                    <connections>
+                        <outlet property="preferdNewsTable" destination="ckh-Pd-x75" id="ouT-9b-0gB"/>
+                        <segue destination="aa7-Xi-xfY" kind="show" identifier="showNewsView" id="XcN-K3-A0J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hav-1b-rz4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -477,4 +563,7 @@
     <resources>
         <image name="logingBackground_2" width="1600" height="1200"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="XcN-K3-A0J"/>
+    </inferredMetricsTieBreakers>
 </document>
