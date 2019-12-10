@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3A1C67E0239F5A8500E0B323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1C67DF239F5A8500E0B323 /* AppDelegate.swift */; };
-		3A1C67E2239F5A8500E0B323 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1C67E1239F5A8500E0B323 /* SceneDelegate.swift */; };
 		3A1C67E4239F5A8500E0B323 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1C67E3239F5A8500E0B323 /* ViewController.swift */; };
 		3A1C67E7239F5A8500E0B323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1C67E5239F5A8500E0B323 /* Main.storyboard */; };
 		3A1C67E9239F5A8600E0B323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A1C67E8239F5A8600E0B323 /* Assets.xcassets */; };
@@ -28,6 +27,8 @@
 		3AF1930B239F997900C06E62 /* AllNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1930A239F997900C06E62 /* AllNewsCell.swift */; };
 		3AF1930D239FA4DF00C06E62 /* PreferredNewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1930C239FA4DF00C06E62 /* PreferredNewsVC.swift */; };
 		3AF6780D239FADAF00A3C143 /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF6780C239FADAF00A3C143 /* UserAuthentication.swift */; };
+		3AF67810239FD62F00A3C143 /* CurvedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF6780F239FD62F00A3C143 /* CurvedView.swift */; };
+		3AF67814239FE66300A3C143 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF67813239FE66300A3C143 /* NewsView.swift */; };
 		5B16D06ECB10F47D8DF86A82 /* Pods_Swivel_News_Swivel_NewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B19D0D775960EA34E403D44 /* Pods_Swivel_News_Swivel_NewsUITests.framework */; };
 		C80710913F211B6721DF38E5 /* Pods_Swivel_News.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C1E0E266ABF0B89AF28F5A /* Pods_Swivel_News.framework */; };
 		EB309D7FDCF0CB27EEAFB9A1 /* Pods_Swivel_NewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0A11D0FDDC8F76C3DDEDEB /* Pods_Swivel_NewsTests.framework */; };
@@ -57,7 +58,6 @@
 		359017495460F22955F04229 /* Pods-Swivel-News-Swivel-NewsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swivel-News-Swivel-NewsUITests.release.xcconfig"; path = "Target Support Files/Pods-Swivel-News-Swivel-NewsUITests/Pods-Swivel-News-Swivel-NewsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3A1C67DC239F5A8500E0B323 /* Swivel-News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swivel-News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A1C67DF239F5A8500E0B323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A1C67E1239F5A8500E0B323 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3A1C67E3239F5A8500E0B323 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A1C67E6239F5A8500E0B323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A1C67E8239F5A8600E0B323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +82,8 @@
 		3AF1930A239F997900C06E62 /* AllNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllNewsCell.swift; sourceTree = "<group>"; };
 		3AF1930C239FA4DF00C06E62 /* PreferredNewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferredNewsVC.swift; sourceTree = "<group>"; };
 		3AF6780C239FADAF00A3C143 /* UserAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
+		3AF6780F239FD62F00A3C143 /* CurvedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedView.swift; sourceTree = "<group>"; };
+		3AF67813239FE66300A3C143 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		7BFAFD1A836FA372503597C1 /* Pods-Swivel-News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swivel-News.release.xcconfig"; path = "Target Support Files/Pods-Swivel-News/Pods-Swivel-News.release.xcconfig"; sourceTree = "<group>"; };
 		869213663EA1927B155862C1 /* Pods-Swivel-NewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swivel-NewsTests.release.xcconfig"; path = "Target Support Files/Pods-Swivel-NewsTests/Pods-Swivel-NewsTests.release.xcconfig"; sourceTree = "<group>"; };
 		8B0A11D0FDDC8F76C3DDEDEB /* Pods_Swivel_NewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swivel_NewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,7 +161,6 @@
 				3A1C6810239F648800E0B323 /* View */,
 				3A1C680F239F647C00E0B323 /* Model */,
 				3A1C67DF239F5A8500E0B323 /* AppDelegate.swift */,
-				3A1C67E1239F5A8500E0B323 /* SceneDelegate.swift */,
 				3A1C67E3239F5A8500E0B323 /* ViewController.swift */,
 				3A1C67E5239F5A8500E0B323 /* Main.storyboard */,
 				3A1C67E8239F5A8600E0B323 /* Assets.xcassets */,
@@ -201,10 +202,12 @@
 		3A1C6810239F648800E0B323 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3AF6780E239FD61000A3C143 /* ModelView */,
 				3AF19307239F882700C06E62 /* Cell */,
 				3AF192FC239F6FD900C06E62 /* AllNewsVC.swift */,
 				3AF1930C239FA4DF00C06E62 /* PreferredNewsVC.swift */,
 				3AF6780C239FADAF00A3C143 /* UserAuthentication.swift */,
+				3AF67813239FE66300A3C143 /* NewsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -235,6 +238,14 @@
 				3AF1930A239F997900C06E62 /* AllNewsCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		3AF6780E239FD61000A3C143 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				3AF6780F239FD62F00A3C143 /* CurvedView.swift */,
+			);
+			path = ModelView;
 			sourceTree = "<group>";
 		};
 		42E7BF53C9B8558709C2C9E8 /* Frameworks */ = {
@@ -488,9 +499,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AF6780D239FADAF00A3C143 /* UserAuthentication.swift in Sources */,
+				3AF67814239FE66300A3C143 /* NewsView.swift in Sources */,
 				3AF192FF239F709F00C06E62 /* RestClient.swift in Sources */,
 				3A1C67E4239F5A8500E0B323 /* ViewController.swift in Sources */,
 				3A1C67E0239F5A8500E0B323 /* AppDelegate.swift in Sources */,
+				3AF67810239FD62F00A3C143 /* CurvedView.swift in Sources */,
 				3A1C6815239F66CB00E0B323 /* Switcher.swift in Sources */,
 				3AF19301239F70B800C06E62 /* ResponseSwift.swift in Sources */,
 				3AF1930D239FA4DF00C06E62 /* PreferredNewsVC.swift in Sources */,
@@ -499,7 +512,6 @@
 				3AF192FD239F6FD900C06E62 /* AllNewsVC.swift in Sources */,
 				3AF19306239F743200C06E62 /* UrlConstants.swift in Sources */,
 				3A1C681B239F682200E0B323 /* ApplicationNavigation.swift in Sources */,
-				3A1C67E2239F5A8500E0B323 /* SceneDelegate.swift in Sources */,
 				3AF1930B239F997900C06E62 /* AllNewsCell.swift in Sources */,
 				3AF19304239F73C500C06E62 /* AppConstants.swift in Sources */,
 			);
@@ -678,6 +690,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6W49AKL4C3;
 				INFOPLIST_FILE = "Swivel-News/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -697,6 +710,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6W49AKL4C3;
 				INFOPLIST_FILE = "Swivel-News/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

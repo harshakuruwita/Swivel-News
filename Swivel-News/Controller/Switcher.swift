@@ -7,32 +7,33 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class Switcher {
-    
+     var handle: AuthStateDidChangeListenerHandle?
     static func updateRootVC(){
         
-       // let isLogin = UserDefaults.standard.bool(forKey: "isLogin")
-        let isLogin = true
         var rootVC : UIViewController?
         
-    
-        
-        
-        if(isLogin){
-            rootVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "applicationNavigation") as! ApplicationNavigation
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            if user != nil {
+              rootVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "applicationNavigation") as! ApplicationNavigation
+                
+            } else {
+                rootVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Authentication") as! AuthenticationNavigation
+            }
             
-            
-            
-            
-            
-            
-        }else{
-            rootVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Authentication") as! AuthenticationNavigation
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.window?.rootViewController = rootVC
         }
+       
         
-         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-              appDelegate.window?.rootViewController = rootVC
+  
+        
+        
+        
+         
         
     }
     

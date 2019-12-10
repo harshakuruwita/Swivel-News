@@ -17,18 +17,21 @@ class AllNewsVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
     @IBOutlet weak var featurenewsCollectionView: UICollectionView!
     @IBOutlet weak var allNewstable: UITableView!
     
+    
     let fetureNewsIdentifire = "featureNewsCell"
     let allNewsIdentifire = "allNewsCell"
     
     var featureNewsJSON:JSON = []
+    var newsUrl = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        FirebaseApp.configure()
+       
         let db = Firestore.firestore()
         
         getHeadlineNews()
+        self.allNewstable.separatorStyle = .none
         // Do any additional setup after loading the view.
         
         
@@ -69,6 +72,10 @@ class AllNewsVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 8
      }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 125
+    }
 
      // make a cell for each cell index path
      func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -89,7 +96,8 @@ class AllNewsVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
 
      func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
          // handle tap events
-         print("You selected cell #\(indexPath.item)!")
+         newsUrl = featureNewsJSON[indexPath.row]["url"].stringValue
+          self.performSegue(withIdentifier: "showNewsView", sender: self)
      }
     
     
@@ -119,7 +127,16 @@ class AllNewsVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
 
        // method to run when table view cell is tapped
        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-           print("You tapped cell number \(indexPath.row).")
+          
+        newsUrl = featureNewsJSON[indexPath.row]["url"].stringValue
+        self.performSegue(withIdentifier: "showNewsView", sender: self)
        }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "showNewsView") {
+            let vc = segue.destination as! NewsView
+            vc.newsUrl = newsUrl
+        }
+    }
  
 }
