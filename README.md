@@ -23,6 +23,9 @@
 ## Requirements
 
 - iOS 11.0+
+- User : harsha@gmail.com
+- Password :utx1234
+
 
 
 
