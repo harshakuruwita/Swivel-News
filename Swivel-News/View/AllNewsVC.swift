@@ -9,6 +9,7 @@
 import UIKit
 import SwiftyJSON
 import SDWebImage
+import Firebase
 
 class AllNewsVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UITableViewDelegate, UITableViewDataSource {
     
@@ -24,6 +25,9 @@ class AllNewsVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        FirebaseApp.configure()
+        let db = Firestore.firestore()
+        
         getHeadlineNews()
         // Do any additional setup after loading the view.
         
@@ -101,7 +105,10 @@ class AllNewsVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
 
         let cell:AllNewsCell = tableView.dequeueReusableCell(withIdentifier: allNewsIdentifire) as! AllNewsCell
         
-       
+       cell.titleImage.sd_setImage(with: URL(string: featureNewsJSON[indexPath.row]["urlToImage"].stringValue), placeholderImage: UIImage(named: "placeholder.png"))
+              
+              cell.newsTitle.text = featureNewsJSON[indexPath.row]["title"].stringValue
+              cell.autherName.text = "By : \(featureNewsJSON[indexPath.row]["author"].stringValue)"
 
           
 

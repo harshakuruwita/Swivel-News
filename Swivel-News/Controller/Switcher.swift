@@ -20,7 +20,13 @@ class Switcher {
         
         
         if(isLogin){
-            rootVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Application") as! ApplicationNavigation
+            rootVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "applicationNavigation") as! ApplicationNavigation
+            
+            
+            
+            
+            
+            
         }else{
             rootVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Authentication") as! AuthenticationNavigation
         }

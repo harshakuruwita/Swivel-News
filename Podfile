@@ -11,6 +11,9 @@ target 'Swivel-News' do
   pod 'SDWebImage'
   pod 'IQKeyboardManagerSwift'
   pod 'NotificationBannerSwift'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
 
   target 'Swivel-NewsTests' do
     inherit! :search_paths
