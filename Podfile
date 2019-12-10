@@ -6,6 +6,11 @@ target 'Swivel-News' do
   use_frameworks!
 
   # Pods for Swivel-News
+  pod 'SwiftyJSON'
+  pod 'Alamofire'
+  pod 'SDWebImage'
+  pod 'IQKeyboardManagerSwift'
+  pod 'NotificationBannerSwift'
 
   target 'Swivel-NewsTests' do
     inherit! :search_paths
