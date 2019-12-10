@@ -19,11 +19,17 @@ class UserAuthentication: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+self.navigationController?.setNavigationBarHidden(true, animated: false)
+       let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+       view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
         
         
+    }
+    
+    @objc func dismissKeyboard() {
+        
+        view.endEditing(true)
     }
     
 
