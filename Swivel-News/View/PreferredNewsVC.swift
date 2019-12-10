@@ -21,6 +21,7 @@ class PreferredNewsVC: UIViewController,UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
 
         getHeadlineNews(quarry: "bitcoin")
+        self.preferdNewsTable.separatorStyle = .none
         // Do any additional setup after loading the view.
     }
     
